@@ -51,6 +51,8 @@ jobs:
     
         run: |
           cd publish || exit 1
+          echo "RELEASE_NAME=$upstreamLatestTag" >> $GITHUB_ENV
+          echo "TAG_NAME=$upstreamLatestTag" >> $GITHUB_ENV
           git init
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
