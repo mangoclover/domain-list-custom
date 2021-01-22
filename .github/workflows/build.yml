@@ -41,7 +41,7 @@ jobs:
           go run ./ --datapath=./domain-list-community/data
 
       - name: Rename to geosite.dat && generate sha256 hash
-        if: ${{ env.NeedToSync }}
+  
         run: |
           cd publish || exit 1
           mv dlc.dat geosite.dat
