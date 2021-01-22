@@ -24,8 +24,8 @@ jobs:
           if [[ $upstreamLatestTag != $thisLatestTag ]]; then
             echo "NeedToSync=true" >> $GITHUB_ENV
           fi
-          echo "RELEASE_NAME=$upstreamLatestTag" >> $GITHUB_ENV
-          echo "TAG_NAME=$upstreamLatestTag" >> $GITHUB_ENV
+          echo "RELEASE_NAME=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+          echo "TAG_NAME=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
         shell: bash
 
       - name: Checkout codebase
