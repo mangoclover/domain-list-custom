@@ -19,49 +19,49 @@ jobs:
           token: ${{ secrets.ACTIONS_TOKEN }}
             
       - name: download action
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://github.com/mangoclover/domain-list-custom/raw/master/.github/workflows/build.yml
           file-name: .github/workflows/build.yml
 
       - name: download common.go
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/common.go
           file-name: common.go   
           
       - name: download go.mod
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/go.mod
           file-name: go.mod
 
       - name: download go.sum
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/go.sum
           file-name: go.sum
   
       - name: download listinfo.go
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/listinfo.go
           file-name: listinfo.go
 
       - name: download listinfomap.go
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/listinfomap.go
           file-name: listinfomap.go
  
       - name: download main.go
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/main.go
           file-name: main.go
 
       - name: download trie.go
-        uses: carlosperate/download-file-action@v1.0.3
+        uses: carlosperate/download-file-action@v1.1.0
         with: 
           file-url: https://raw.githubusercontent.com/mangoclover/domain-list-custom/master/trie.go
           file-name: trie.go
