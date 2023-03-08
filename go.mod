@@ -3,7 +3,7 @@ module github.com/Loyalsoldier/domain-list-custom
 go 1.15
 
 require (
-	google.golang.org/protobuf v1.27.1
+	google.golang.org/protobuf v1.29.0
 	v2ray.com/core v4.19.1+incompatible
 )
 
